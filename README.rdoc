@@ -1,0 +1,58 @@
+= Text Ferry
+Text Ferry is a super simple DSL for quickly loading CSV text files into a
+database.
+
+== Installation
+    gem install text_ferry
+or in your Gemfile:
+    gem "text_ferry"
+
+== Notes / Use
+Text Ferry relies on Sequel[http://sequel.rubyforge.org/documentation.html] to
+do the heavy lifting. You will need to be familiar with how to define a table
+schema using Sequel. For example, to load a CSV file named "data.csv" that is
+located in a folder named "/my_data":
+
+    loader = TextFerry::Loader.new("sqlite://sample.db", "/my_data")
+    loader.load_table(:data) do
+      primary_key :id
+      String :name
+      String :phone
+    end
+
+This will load data from the CSV file into a database named "sample.db" using
+the given column names and types. Note that if the table already exists in the
+database, it will be dropped and re-created using the given schema.
+
+== Patches / Pull Requests
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don’t break it in a future version
+  unintentionally.
+* Commit, do not mess with rakefile, version, or history (if you want to have
+  your own version, that is fine but bump version in a commit by itself I can
+  ignore when I pull).
+* Send me a pull request. Bonus points for topic branches.
+
+== License
+The MIT License
+
+Copyright © 2011 Bob Nadler, Jr.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
