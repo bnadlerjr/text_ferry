@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Bob Nadler"]
   s.email       = ["bnadlerjr@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{A DSL for loading CSV text files into a database.}
+  s.description = %q{A DSL for loading CSV text files into a database.}
 
   s.rubyforge_project = "text_ferry"
 
@@ -18,7 +18,10 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_development_dependency "contest", "~> 0.1.3"
+  s.add_development_dependency "rake", "~> 0.9.2"
+  s.add_development_dependency "rdoc", "~> 3.11"
+
+  s.add_runtime_dependency "sequel", "~> 3.28.0"
+  s.add_runtime_dependency "sqlite3", "~> 1.3.4"
 end
