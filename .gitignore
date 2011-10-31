@@ -5,3 +5,4 @@ pkg/*
 *.swp
 .DS_Store
 bin
+test/sample_data/sample.db
