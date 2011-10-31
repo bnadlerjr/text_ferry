@@ -1,5 +1,5 @@
 require "test_helper"
-require "text_ferry/loader"
+require "text_ferry"
 
 class LoadTest < Test::Unit::TestCase
   DATA_PATH = File.join(File.dirname(__FILE__), "..", "sample_data")
