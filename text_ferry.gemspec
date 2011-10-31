@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = TextFerry::VERSION
   s.authors     = ["Bob Nadler"]
   s.email       = ["bnadlerjr@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/bnadlerjr/text_ferry"
   s.summary     = %q{A DSL for loading CSV text files into a database.}
   s.description = %q{A DSL for loading CSV text files into a database.}
 

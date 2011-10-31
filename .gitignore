@@ -6,3 +6,4 @@ pkg/*
 .DS_Store
 bin
 test/sample_data/sample.db
+doc
