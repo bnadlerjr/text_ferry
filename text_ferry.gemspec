@@ -23,5 +23,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rdoc", "~> 4.1.1"
   s.add_development_dependency "sqlite3", "~> 1.3.4"
 
-  s.add_runtime_dependency "sequel", "~> 4.7.0"
+  s.add_runtime_dependency "sequel", "~> 4.8.0"
 end
