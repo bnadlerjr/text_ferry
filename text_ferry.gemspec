@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_development_dependency "contest", "~> 0.1.3"
-  s.add_development_dependency "rake", "~> 10.1.1"
+  s.add_development_dependency "rake", "~> 10.2.2"
   s.add_development_dependency "rdoc", "~> 4.1.1"
   s.add_development_dependency "sqlite3", "~> 1.3.4"
 
