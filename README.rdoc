@@ -1,6 +1,7 @@
 = Text Ferry
 {<img src="https://badge.fury.io/rb/text_ferry.svg" alt="Gem Version" />}[http://badge.fury.io/rb/text_ferry]
 {<img src="https://gemnasium.com/bnadlerjr/text_ferry.svg" alt="Dependency Status" />}[https://gemnasium.com/bnadlerjr/text_ferry]
+{<img src="https://codeclimate.com/github/bnadlerjr/text_ferry/badges/gpa.svg" />}[https://codeclimate.com/github/bnadlerjr/text_ferry]
 
 Text Ferry is a super simple DSL for quickly loading CSV text files into a
 database.
