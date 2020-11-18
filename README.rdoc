@@ -41,7 +41,7 @@ database, it will be dropped and re-created using the given schema.
 == License
 The MIT License
 
-Copyright © 2011-2015 Bob Nadler, Jr.
+Copyright © 2011-2020 Bob Nadler, Jr.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
